@@ -4,6 +4,7 @@ import { buildAnagrams, buildCrossword, buildCryptogram, buildWordSearch, type C
 import { validatePuzzle, type Puzzle } from './crossword';
 import type { AnagramItem } from './anagram';
 import { validateWordSearch, type WordSearch } from './wordsearch';
+import { generateSudoku, validateSudoku, type Sudoku } from './sudoku';
 
 export interface DailyPack {
   date: string; // AAAA-MM-DD
@@ -16,6 +17,7 @@ export interface DailyPack {
     cripto: Cryptogram;
     caca: WordSearch;
     anagrama: AnagramItem[];
+    sudoku?: Sudoku; // pacotes anteriores a 2026-10-19 não têm
   };
 }
 
@@ -49,6 +51,7 @@ export function buildDaily(date: string): DailyPack {
       cripto: buildCryptogram(nivel, seed),
       caca: buildWordSearch(tema, nivel, seed),
       anagrama: buildAnagrams(tema, nivel, seed),
+      sudoku: generateSudoku(nivel, seed),
     },
   };
 }
@@ -67,5 +70,6 @@ export function validateDaily(p: DailyPack): string[] {
     if (a.letters.join('') === a.answer) errors.push(`anagramas: ${a.answer} não foi embaralhada`);
     if ([...a.letters].sort().join('') !== [...a.answer].sort().join('')) errors.push(`anagramas: letras de ${a.answer} não conferem`);
   }
+  if (p.games.sudoku) errors.push(...validateSudoku(p.games.sudoku).map((e) => `sudoku: ${e}`));
   return errors;
 }

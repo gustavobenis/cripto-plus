@@ -39,9 +39,11 @@ interface HelpProps {
   onWord: () => void;
   onSolution: () => void;
   letterLabel?: string;
+  wordLabel?: string;
+  wordDesc?: string;
 }
 
-export function HelpMenu({ disabled, onContext, onLetter, onWord, onSolution, letterLabel = 'Revelar uma letra' }: HelpProps) {
+export function HelpMenu({ disabled, onContext, onLetter, onWord, onSolution, letterLabel = 'Revelar uma letra', wordLabel = 'Revelar a palavra', wordDesc = 'Preenche a resposta da pista selecionada.' }: HelpProps) {
   return (
     <details className="help">
       <summary className="btn btn-ghost">
@@ -58,8 +60,8 @@ export function HelpMenu({ disabled, onContext, onLetter, onWord, onSolution, le
           <span>Preenche apenas a próxima letra correta.</span>
         </button>
         <button type="button" disabled={disabled} onClick={onWord}>
-          <strong>Revelar a palavra</strong>
-          <span>Preenche a resposta da pista selecionada.</span>
+          <strong>{wordLabel}</strong>
+          <span>{wordDesc}</span>
         </button>
         <button type="button" disabled={disabled} onClick={onSolution}>
           <strong>Ver solução completa</strong>

@@ -26,13 +26,14 @@ export function remove(key: string): void {
 
 export interface Prefs {
   timer: boolean;
+  theme?: 'light' | 'dark';
 }
 export const getPrefs = (): Prefs => ({ timer: true, ...(load<Partial<Prefs>>('cripto:prefs') ?? {}) });
 export const setPrefs = (p: Prefs) => save('cripto:prefs', p);
 
 export interface Result {
   id: string;
-  tipo: 'cruzadas' | 'cripto' | 'caca' | 'anagrama';
+  tipo: 'cruzadas' | 'cripto' | 'caca' | 'anagrama' | 'sudoku';
   tema: string;
   nivel: number;
   time: number;

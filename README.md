@@ -14,11 +14,12 @@ npm run build              # typecheck + build em dist/
 
 ## O que existe
 
-- **Palavras cruzadas**, **criptogramas** (ditados populares), **caça-palavras** e **palavras embaralhadas**, com 5 níveis, 7 temas, pausa, cronômetro opcional e salvamento automático.
+- **Palavras cruzadas**, **criptogramas** (ditados populares), **caça-palavras**, **palavras embaralhadas** e **sudoku** (solução única garantida), com 5 níveis, 7 temas de palavras, pausa, cronômetro opcional e salvamento automático.
 - **Ajuda progressiva** (dica contextual → uma letra → palavra → solução completa com confirmação); letras reveladas ficam marcadas e as dicas são contadas.
-- **Desafio do dia** (4 modalidades) e **arquivo** de dias anteriores; dificuldade sobe de segunda a sábado.
+- **Desafio do dia**  e **arquivo** de dias anteriores; dificuldade sobe de segunda a sábado.
 - Progresso, histórico, **backup exportável/importável**, resultado compartilhável sem spoilers.
-- PWA instalável e com uso offline após a primeira visita.
+- PWA instalável e com uso offline após a primeira visita; tema claro/escuro (automático, com troca manual).
+- Sequência de dias, patentes (Novato → Mestre das Palavras) e conquistas, calculadas localmente.
 - Layout mobile-first sem overflow horizontal verificado de 320 px a 1920 px.
 
 ## Tudo dentro do GitHub

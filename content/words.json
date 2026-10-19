@@ -223,6 +223,70 @@
       "tier": 2,
       "source": "original",
       "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CRUZADA",
+      "clue": "Expedição militar-religiosa medieval rumo à Terra Santa",
+      "hint": "Mobilizou cavaleiros de toda a Europa",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ABOLICAO",
+      "clue": "Fim legal da escravidão",
+      "hint": "No Brasil ocorreu em 1888",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "DITADURA",
+      "clue": "Regime em que o poder é concentrado e sem liberdade política",
+      "hint": "Oposto de democracia",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "DEMOCRACIA",
+      "clue": "Governo em que o povo escolhe seus representantes",
+      "hint": "Nasceu na Grécia antiga",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MONARQUIA",
+      "clue": "Regime governado por rei ou rainha",
+      "hint": "O Reino Unido mantém uma",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ARMADURA",
+      "clue": "Proteção de metal usada por cavaleiros",
+      "hint": "Pesava dezenas de quilos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MESOPOTAMIA",
+      "clue": "Região entre os rios Tigre e Eufrates",
+      "hint": "Berço da escrita cuneiforme",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "HIEROGLIFO",
+      "clue": "Símbolo da escrita dos antigos egípcios",
+      "hint": "Decifrado graças à Pedra de Roseta",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
     }
   ],
   "geografia": [
@@ -447,6 +511,70 @@
       "clue": "Continente com 54 países reconhecidos",
       "hint": "Berço da espécie humana",
       "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "OCEANO",
+      "clue": "Grande massa de água salgada",
+      "hint": "O Pacífico é o maior",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CAPITAL",
+      "clue": "Cidade sede do governo de um país",
+      "hint": "Brasília é a do Brasil",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "LITORAL",
+      "clue": "Faixa de terra junto ao mar",
+      "hint": "O do Brasil tem mais de sete mil quilômetros",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PLANALTO",
+      "clue": "Terreno elevado e relativamente plano",
+      "hint": "O Central abriga Brasília",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "DELTA",
+      "clue": "Foz de rio em forma de leque",
+      "hint": "O do Nilo é famoso",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GEADA",
+      "clue": "Camada de gelo que cobre o solo em noites frias",
+      "hint": "Comum no Sul do Brasil no inverno",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CLIMA",
+      "clue": "Padrão do tempo em uma região ao longo dos anos",
+      "hint": "Pode ser tropical ou temperado",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ESTUARIO",
+      "clue": "Foz de rio larga em contato com o mar",
+      "hint": "Mistura água doce e salgada",
+      "tier": 3,
       "source": "original",
       "verifiedAt": "2026-10-19"
     }
@@ -675,6 +803,70 @@
       "tier": 2,
       "source": "original",
       "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ACIDO",
+      "clue": "Substância de pH menor que 7",
+      "hint": "O limão é rico em um",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GELO",
+      "clue": "Água no estado sólido",
+      "hint": "Derrete acima de zero grau",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SANGUE",
+      "clue": "Líquido vermelho que circula pelo corpo",
+      "hint": "Transporta oxigênio",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "VITAMINA",
+      "clue": "Nutriente essencial em pequenas quantidades",
+      "hint": "A C é encontrada na laranja",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "EROSAO",
+      "clue": "Desgaste do solo pela ação da água ou do vento",
+      "hint": "Forma vales e dunas",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FERRO",
+      "clue": "Metal atraído por ímãs",
+      "hint": "Seu símbolo químico é Fe",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BIOLOGIA",
+      "clue": "Ciência que estuda os seres vivos",
+      "hint": "Inclui botânica e zoologia",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FOTOSSINTESE",
+      "clue": "Processo em que plantas produzem alimento com luz",
+      "hint": "Libera oxigênio",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
     }
   ],
   "natureza": [
@@ -901,6 +1093,70 @@
       "tier": 1,
       "source": "original",
       "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "COELHO",
+      "clue": "Mamífero de orelhas longas que salta",
+      "hint": "Adora cenouras",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PAPAGAIO",
+      "clue": "Ave que imita a voz humana",
+      "hint": "Tem penas verdes no Brasil",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PEIXE",
+      "clue": "Animal aquático que respira por brânquias",
+      "hint": "Vive em rios e mares",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "RAPOSA",
+      "clue": "Mamífero astuto de cauda felpuda",
+      "hint": "Parente do cachorro",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "AGUIA",
+      "clue": "Ave de rapina de visão muito aguçada",
+      "hint": "Símbolo de vários países",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "COGUMELO",
+      "clue": "Fungo com formato de chapéu",
+      "hint": "Alguns são comestíveis e outros venenosos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CARNIVORO",
+      "clue": "Animal que se alimenta de carne",
+      "hint": "O leão é um",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ONIVORO",
+      "clue": "Animal que come vegetais e carne",
+      "hint": "O ser humano é um",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
     }
   ],
   "tecnologia": [
@@ -1124,6 +1380,70 @@
       "answer": "ARQUIVO",
       "clue": "Conjunto de dados guardado com um nome",
       "hint": "Pode ser documento, foto ou vídeo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "WIFI",
+      "clue": "Tecnologia de internet sem fio",
+      "hint": "Presente em casas e cafés",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "EMAIL",
+      "clue": "Mensagem enviada pela internet",
+      "hint": "Exige um endereço com arroba",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "DOWNLOAD",
+      "clue": "Baixar um arquivo da internet",
+      "hint": "Oposto de upload",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PERFIL",
+      "clue": "Página com os dados de um usuário em uma rede",
+      "hint": "Costuma ter foto",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "LINK",
+      "clue": "Atalho clicável que leva a outra página",
+      "hint": "Aparece em azul e sublinhado",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BLUETOOTH",
+      "clue": "Conexão sem fio de curto alcance",
+      "hint": "Liga fones ao celular",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "DADOS",
+      "clue": "Informações armazenadas ou processadas",
+      "hint": "Ficam organizados em tabelas e bancos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "REDE",
+      "clue": "Conjunto de dispositivos conectados",
+      "hint": "Pode ser local ou mundial",
       "tier": 1,
       "source": "original",
       "verifiedAt": "2026-10-19"
@@ -1353,6 +1673,70 @@
       "tier": 2,
       "source": "original",
       "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "LARGADA",
+      "clue": "Início de uma corrida",
+      "hint": "Ocorre após o tiro ou o sinal",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CHEGADA",
+      "clue": "Fim de uma corrida",
+      "hint": "Onde fica a linha final",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SAQUE",
+      "clue": "Golpe que inicia uma jogada no vôlei ou no tênis",
+      "hint": "Feito atrás da linha de fundo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GOLEADA",
+      "clue": "Vitória por grande diferença de gols",
+      "hint": "Mais de quatro de saldo, em geral",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ZAGUEIRO",
+      "clue": "Defensor central do futebol",
+      "hint": "Joga perto da própria área",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PISCINA",
+      "clue": "Local onde se pratica a natação",
+      "hint": "Tem raias",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "LUTA",
+      "clue": "Combate esportivo corpo a corpo",
+      "hint": "Judô e boxe são exemplos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FUTSAL",
+      "clue": "Futebol de salão",
+      "hint": "Jogado em quadra com cinco por equipe",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
     }
   ],
   "cultura": [
@@ -1497,6 +1881,70 @@
       "clue": "Arte de projetar edifícios",
       "hint": "Niemeyer foi um mestre",
       "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ESCRITOR",
+      "clue": "Pessoa que escreve livros",
+      "hint": "Jorge Amado foi um grande brasileiro",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FESTIVAL",
+      "clue": "Evento com várias apresentações artísticas",
+      "hint": "O Rock in Rio é um",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "LENDA",
+      "clue": "Narrativa popular com elementos fantásticos",
+      "hint": "O Boitatá é uma",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PALCO",
+      "clue": "Plataforma onde atuam artistas",
+      "hint": "Fica diante da plateia",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MUSICA",
+      "clue": "Arte dos sons",
+      "hint": "Pode ser erudita ou popular",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ESTATUA",
+      "clue": "Escultura de uma figura inteira",
+      "hint": "O Cristo Redentor é uma",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CORDEL",
+      "clue": "Poesia popular nordestina vendida em folhetos",
+      "hint": "Costuma ser pendurada em barbantes",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ROCK",
+      "clue": "Gênero musical de guitarras",
+      "hint": "Elvis foi chamado de rei dele",
+      "tier": 1,
       "source": "original",
       "verifiedAt": "2026-10-19"
     }

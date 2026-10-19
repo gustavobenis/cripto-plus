@@ -36,13 +36,17 @@ export const LEVELS: Level[] = [
 export const themeName = (id: string) => THEMES.find((t) => t.id === id)?.name ?? id;
 export const levelName = (n: number) => LEVELS.find((l) => l.id === n)?.name ?? String(n);
 
-export type Tipo = 'cruzadas' | 'cripto' | 'caca' | 'anagrama';
+export type Tipo = 'cruzadas' | 'cripto' | 'caca' | 'anagrama' | 'sudoku';
 export const TIPO_NAME: Record<Tipo, string> = {
   cruzadas: 'Palavras Cruzadas',
   cripto: 'Criptograma',
   caca: 'Caça-Palavras',
   anagrama: 'Palavras Embaralhadas',
+  sudoku: 'Sudoku',
 };
+
+/** Modalidades sem tema de palavras. */
+export const NO_THEME: Tipo[] = ['cripto', 'sudoku'];
 export interface GameType {
   id: string;
   name: string;
@@ -55,4 +59,5 @@ export const GAME_TYPES: GameType[] = [
   { id: 'cripto', tipo: 'cripto', name: 'Criptogramas', desc: 'Decifre mensagens', icon: 'lock' },
   { id: 'caca', tipo: 'caca', name: 'Caça-Palavras', desc: 'Encontre as palavras escondidas', icon: 'search' },
   { id: 'embaralhadas', tipo: 'anagrama', name: 'Palavras Embaralhadas', desc: 'Organize as letras', icon: 'type' },
+  { id: 'sudoku', tipo: 'sudoku', name: 'Sudoku', desc: 'Lógica e números', icon: 'hash' },
 ];

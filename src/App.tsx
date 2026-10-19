@@ -1,5 +1,6 @@
 import { Suspense, lazy, useEffect, useRef, useState } from 'react';
 import Icon from './components/Icon';
+import { getPrefs, setPrefs } from './lib/storage';
 import { Home, ModeSelect, Progress, Setup, gameUrl, go, newSeed } from './pages/Pages';
 import { Archive, Daily, DailyLoader } from './pages/Daily';
 import { dailyParams, type DailyPack } from './lib/daily';
@@ -11,8 +12,9 @@ const CrosswordGame = lazy(() => import('./components/CrosswordGame'));
 const CryptoGame = lazy(() => import('./components/CryptoGame'));
 const WordSearchGame = lazy(() => import('./components/WordSearchGame'));
 const AnagramGame = lazy(() => import('./components/AnagramGame'));
+const SudokuGame = lazy(() => import('./components/SudokuGame'));
 
-const TIPOS: string[] = ['cruzadas', 'cripto', 'caca', 'anagrama'];
+const TIPOS: string[] = ['cruzadas', 'cripto', 'caca', 'anagrama', 'sudoku'];
 
 function useRoute() {
   const [hash, setHash] = useState(() => window.location.hash || '#/');
@@ -36,8 +38,20 @@ const NAV: { to: string; label: string; icon: string }[] = [
   { to: '/progresso', label: 'Progresso', icon: 'chart' },
 ];
 
+const isDark = () =>
+  document.documentElement.dataset.theme
+    ? document.documentElement.dataset.theme === 'dark'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 function Header({ path }: { path: string }) {
   const [open, setOpen] = useState(false);
+  const [dark, setDark] = useState(isDark);
+  const toggleTheme = () => {
+    const next = dark ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    setPrefs({ ...getPrefs(), theme: next });
+    setDark(!dark);
+  };
   useEffect(() => setOpen(false), [path]);
   return (
     <header className="site-header">
@@ -45,6 +59,9 @@ function Header({ path }: { path: string }) {
         <a className="logo" href="#/" aria-label="Cripto+ — início">
           Cripto<span>+</span>
         </a>
+        <button type="button" className="btn btn-ghost icon-btn theme-btn" onClick={toggleTheme} aria-label={dark ? 'Usar tema claro' : 'Usar tema escuro'}>
+          <Icon name={dark ? 'sun' : 'moon'} />
+        </button>
         <button className="btn btn-ghost icon-btn menu-btn" aria-expanded={open} aria-controls="nav" aria-label={open ? 'Fechar menu' : 'Abrir menu'} onClick={() => setOpen((o) => !o)}>
           <Icon name={open ? 'close' : 'menu'} />
         </button>
@@ -75,7 +92,7 @@ export default function App() {
     const tipo = parts[1] as Tipo;
     const dailyDate = /^\d{4}-\d{2}-\d{2}$/.test(params.get('daily') ?? '') ? params.get('daily')! : null;
     const dp = dailyDate ? dailyParams(dailyDate) : null;
-    const tema = dp ? (tipo === 'cripto' ? 'ditados' : dp.tema) : (params.get('tema') ?? 'variado');
+    const tema = dp ? (tipo === 'cripto' ? 'ditados' : tipo === 'sudoku' ? 'logica' : dp.tema) : (params.get('tema') ?? 'variado');
     const nivel = dp ? dp.nivel : Math.min(5, Math.max(1, Number(params.get('nivel')) || 3));
     const seed = dp ? dp.seed : Number(params.get('seed')) || 1;
     const again = () => go(gameUrl(tipo, tema, nivel, newSeed()));
@@ -84,13 +101,14 @@ export default function App() {
       if (tipo === 'cruzadas') return <CrosswordGame {...common} prebuilt={pack?.games.cruzadas} />;
       if (tipo === 'caca') return <WordSearchGame {...common} prebuilt={pack?.games.caca} />;
       if (tipo === 'anagrama') return <AnagramGame {...common} prebuilt={pack?.games.anagrama} />;
+      if (tipo === 'sudoku') return <SudokuGame {...common} prebuilt={pack?.games.sudoku} />;
       return <CryptoGame {...common} prebuilt={pack?.games.cripto} />;
     };
     page = (
       <>
         {dailyDate ? <DailyLoader date={dailyDate}>{render}</DailyLoader> : render(null)}
         <div className="container">
-          <ReportLink titulo={`${TIPO_NAME[tipo]} · ${tipo === 'cripto' ? 'ditados' : themeName(tema)} · ${levelName(nivel)}${dailyDate ? ` · ${dailyDate}` : ''}`} />
+          <ReportLink titulo={`${TIPO_NAME[tipo]} · ${tipo === 'cripto' ? 'ditados' : tipo === 'sudoku' ? 'lógica' : themeName(tema)} · ${levelName(nivel)}${dailyDate ? ` · ${dailyDate}` : ''}`} />
         </div>
       </>
     );

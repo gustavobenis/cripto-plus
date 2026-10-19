@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import Icon from '../components/Icon';
 import MiniGrid from '../components/MiniGrid';
-import { GAME_TYPES, LEVELS, THEMES, TIPO_NAME, levelName, themeName, type Tipo } from '../data/catalog';
+import { GAME_TYPES, LEVELS, NO_THEME, THEMES, TIPO_NAME, levelName, themeName, type Tipo } from '../data/catalog';
 import { fmt } from '../components/shared';
 import { getPrefs, getResults, load, setPrefs } from '../lib/storage';
 import { dailyParams, localDate } from '../lib/daily';
+import { statsFrom } from '../lib/achievements';
 
 export const go = (to: string) => {
   window.location.hash = to;
@@ -27,11 +28,12 @@ export function dailyInfo(date = localDate()) {
 
 export const dailyUrl = (tipo: Tipo, date = localDate()) => {
   const i = dailyInfo(date);
-  return gameUrl(tipo, tipo === 'cripto' ? 'ditados' : i.tema, i.nivel, i.seed, date);
+  return gameUrl(tipo, tipo === 'cripto' ? 'ditados' : tipo === 'sudoku' ? 'logica' : i.tema, i.nivel, i.seed, date);
 };
 
 export function Home() {
   const daily = dailyInfo();
+  const stats = statsFrom(getResults());
   const last = load<{ tipo: Tipo; tema: string; nivel: number; seed: number }>('cripto:last');
   return (
     <>
@@ -111,7 +113,10 @@ export function Home() {
         <div className="promo">
           <p className="badge badge-new">Novo</p>
           <h2>Torne-se um Mestre das Palavras</h2>
-          <p>Complete desafios, acompanhe seu progresso e dispute a sequência diária.</p>
+          <p>
+            Sua patente: <strong>{stats.rank.name}</strong> · {stats.total} jogo(s) concluído(s)
+            {stats.streak > 0 ? ` · 🔥 ${stats.streak} dia(s) seguidos` : ''}
+          </p>
           <button className="btn btn-accent" onClick={() => go('/progresso')}>
             Ver meu progresso <Icon name="arrow" />
           </button>
@@ -161,10 +166,10 @@ export function Setup({ tipo }: { tipo: Tipo }) {
   const [tema, setTema] = useState('variado');
   const [nivel, setNivel] = useState(3);
   const [timer, setTimer] = useState(getPrefs().timer);
-  const isCripto = tipo === 'cripto';
+  const isCripto = NO_THEME.includes(tipo);
   const start = () => {
     setPrefs({ ...getPrefs(), timer });
-    go(gameUrl(tipo, isCripto ? 'ditados' : tema, nivel, newSeed()));
+    go(gameUrl(tipo, isCripto ? (tipo === 'sudoku' ? 'logica' : 'ditados') : tema, nivel, newSeed()));
   };
   return (
     <section className="container section setup">
@@ -255,14 +260,33 @@ export function Progress() {
   const total = results.length;
   const best = results.length ? Math.min(...results.map((r) => r.time)) : 0;
   const noHelp = results.filter((r) => r.hints === 0).length;
+  const stats = statsFrom(results);
   return (
     <section className="container section">
       <h1>Meu progresso</h1>
+      <p className="rank">
+        <span className="badge badge-accent">{stats.rank.name}</span>
+        {stats.rank.next ? <span className="muted"> · faltam {stats.rank.next.min - stats.total} jogo(s) para {stats.rank.next.name}</span> : <span className="muted"> · patente máxima!</span>}
+      </p>
       <div className="stats">
         <div className="stat"><strong>{total}</strong><span>Jogos concluídos</span></div>
         <div className="stat"><strong>{noHelp}</strong><span>Sem usar dicas</span></div>
         <div className="stat"><strong>{total ? fmt(best) : '—'}</strong><span>Melhor tempo</span></div>
+        <div className="stat"><strong>🔥 {stats.streak}</strong><span>Sequência atual (maior: {stats.best})</span></div>
       </div>
+      <h2>Conquistas</h2>
+      <ul className="achievements">
+        {stats.achievements.map((a) => (
+          <li key={a.id} className={a.done ? 'ach done' : 'ach'}>
+            <span aria-hidden="true">{a.done ? '🏅' : '🔒'}</span>
+            <span>
+              <strong>{a.name}</strong>
+              <span className="muted small"> {a.desc}</span>
+              <span className="sr-only">{a.done ? ' (conquistada)' : ' (bloqueada)'}</span>
+            </span>
+          </li>
+        ))}
+      </ul>
       {total === 0 ? (
         <p className="muted">Você ainda não concluiu nenhum jogo. Que tal começar agora?</p>
       ) : (
@@ -271,7 +295,7 @@ export function Progress() {
             <li key={r.id}>
               <span>
                 <strong>{TIPO_NAME[r.tipo]}</strong>
-                <span className="muted"> · {r.tipo === 'cripto' ? 'Ditados' : themeName(r.tema)} · {levelName(r.nivel)}</span>
+                <span className="muted"> · {r.tipo === 'cripto' ? 'Ditados' : r.tipo === 'sudoku' ? 'Lógica' : themeName(r.tema)} · {levelName(r.nivel)}</span>
               </span>
               <span>{fmt(r.time)} · {r.hints} dica(s)</span>
             </li>
