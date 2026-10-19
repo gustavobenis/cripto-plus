@@ -15,7 +15,15 @@ interface Phrase {
 }
 
 /** Valida content/*.json. Retorna a lista de problemas (vazia = conteúdo aceito). */
-export function checkContent(bank: Record<string, Rec[]>, phrases: Phrase[], themeIds: string[]): string[] {
+/** Fonte que marca texto gerado por IA e ainda não conferido por pessoa. */
+export const PENDING_MARK = 'ia-sugerido';
+
+export function checkContent(
+  bank: Record<string, Rec[]>,
+  phrases: Phrase[],
+  themeIds: string[],
+  opts: { allowPending?: boolean } = {},
+): string[] {
   const errors: string[] = [];
   const seen = new Map<string, string>();
   for (const [tema, list] of Object.entries(bank)) {
@@ -29,6 +37,8 @@ export function checkContent(bank: Record<string, Rec[]>, phrases: Phrase[], the
       if ((w.hint ?? '').trim().length < 6) errors.push(`${id}: dica muito curta`);
       if (![1, 2, 3].includes(w.tier)) errors.push(`${id}: tier deve ser 1, 2 ou 3`);
       if (!w.source) errors.push(`${id}: falta source`);
+      else if (w.source.startsWith(PENDING_MARK) && !opts.allowPending)
+        errors.push(`${id}: sugestão de IA ainda não revisada (troque source pela fonte real após conferir o fato)`);
       if (!/^\d{4}-\d{2}-\d{2}$/.test(w.verifiedAt ?? '')) errors.push(`${id}: verifiedAt deve ser AAAA-MM-DD`);
       for (const [campo, texto] of [['pista', w.clue], ['dica', w.hint]] as const)
         if (w.answer.length >= 4 && normalize(texto).includes(w.answer)) errors.push(`${id}: a ${campo} revela a resposta`);

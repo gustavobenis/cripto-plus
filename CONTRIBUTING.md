@@ -19,3 +19,19 @@ npm install
 npm run dev
 npm run validate:content && npm run typecheck && npm test
 ```
+
+## Palavras sugeridas por IA
+
+O workflow **Sugerir palavras com IA** abre Pull Requests com o rótulo `conteudo-ia`. A IA só **propõe**; quem decide é uma pessoa:
+
+1. Abra o PR e confira **cada fato** em fonte confiável. Reescreva ou apague o que for duvidoso ou parecido com pistas de terceiros.
+2. Em `content/words.json`, troque `source` (`ia-sugerido: conferir fato`) pela fonte real e atualize `verifiedAt`.
+3. Rode `npm run validate:content`: o validador estrito recusa itens ainda marcados como `ia-sugerido`, então o deploy não publica conteúdo não revisado.
+
+Configuração (uma vez): guarde a chave da API como secret do repositório, sem colar em chats ou arquivos:
+
+```bash
+gh secret set ANTHROPIC_API_KEY --repo gustavobenis/cripto-plus
+```
+
+Para rodar: Actions → *Sugerir palavras com IA* → *Run workflow* (escolha tema e quantidade). Opcionalmente defina a variável `ANTHROPIC_MODEL` no ambiente do workflow para trocar de modelo.

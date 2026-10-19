@@ -32,6 +32,7 @@ Sem servidor próprio: o GitHub é repositório, CMS, banco de conteúdo, agenda
 | Conteúdo | `content/words.json` e `content/phrases.json`, com `source` e `verifiedAt`. Editável por Pull Request. |
 | Validação editorial | `npm run validate:content` no CI: respostas únicas e A–Z, pista que não revela a resposta, fonte e data obrigatórias. |
 | Desafio diário | `daily.yml` roda todo dia (06:00 UTC), gera 14 dias à frente em `public/daily/AAAA-MM-DD.json`, valida, commita e republica. Dias já publicados **nunca** são sobrescritos. |
+| Sugestões com IA | `suggest-words.yml` (manual ou toda segunda) pede palavras/pistas à API da Anthropic, filtra com as regras do CI e **abre um Pull Request** marcado `conteudo-ia`. Itens vêm com `source: "ia-sugerido…"` e o validador estrito **bloqueia** o merge até uma pessoa conferir o fato e trocar a fonte. Exige o secret `ANTHROPIC_API_KEY`. |
 | Arquivo | Página `#/arquivo` lê `public/daily/index.json`. |
 | Reportar erro / sugerir palavra | Issue Forms em `.github/ISSUE_TEMPLATE`; o botão "Reportar erro" do jogo abre a issue já preenchida. |
 | Offline / instalável | `manifest.webmanifest` + `sw.js` (daily: rede primeiro; resto: cache). |

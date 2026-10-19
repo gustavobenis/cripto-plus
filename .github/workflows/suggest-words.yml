@@ -1,0 +1,87 @@
+name: Sugerir palavras com IA (abre Pull Request)
+
+on:
+  workflow_dispatch:
+    inputs:
+      tema:
+        description: Tema das palavras
+        type: choice
+        default: natureza
+        options: [historia, geografia, ciencias, natureza, tecnologia, esportes, cultura]
+      quantidade:
+        description: Quantas palavras sugerir (1–30)
+        type: number
+        default: 10
+  schedule:
+    - cron: "0 12 * * 1" # segundas, 12:00 UTC; o tema gira conforme a semana do ano
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: suggest-words
+  cancel-in-progress: false
+
+jobs:
+  suggest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Escolher tema e quantidade
+        id: params
+        run: |
+          if [ -n "${{ inputs.tema }}" ]; then
+            TEMA="${{ inputs.tema }}"; N="${{ inputs.quantidade }}"
+          else
+            TEMAS=(historia geografia ciencias natureza tecnologia esportes cultura)
+            WEEK=$((10#$(date -u +%V)))
+            TEMA="${TEMAS[$((WEEK % 7))]}"; N=10
+          fi
+          echo "tema=$TEMA" >> "$GITHUB_OUTPUT"
+          echo "n=${N:-10}" >> "$GITHUB_OUTPUT"
+
+      - name: Gerar sugestões
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set +e
+          npm run suggest:words -- --tema "${{ steps.params.outputs.tema }}" --n "${{ steps.params.outputs.n }}" --report "$RUNNER_TEMP/report.md"
+          STATUS=$?
+          if [ "$STATUS" = "2" ]; then
+            echo "::warning::Secret ANTHROPIC_API_KEY não configurado; nada foi gerado."
+            exit 0
+          fi
+          exit $STATUS
+
+      - name: Validar (modo permissivo para itens ainda não revisados)
+        run: npm run validate:content -- --allow-pending
+
+      - name: Abrir Pull Request para revisão humana
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet content/words.json; then
+            echo "Nenhuma palavra nova aceita; nada a propor."
+            exit 0
+          fi
+          BRANCH="ia/palavras-${{ steps.params.outputs.tema }}-${{ github.run_id }}"
+          git config user.name "cripto-plus-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add content/words.json
+          git commit -m "Sugere palavras de ${{ steps.params.outputs.tema }} (IA, aguardando revisão)"
+          git push origin "$BRANCH"
+          gh label create conteudo-ia --color 5319e7 --description "Conteúdo sugerido por IA, requer revisão humana" 2>/dev/null || true
+          gh pr create \
+            --base main --head "$BRANCH" \
+            --title "Palavras sugeridas por IA: ${{ steps.params.outputs.tema }}" \
+            --body-file "$RUNNER_TEMP/report.md" \
+            --label conteudo-ia
