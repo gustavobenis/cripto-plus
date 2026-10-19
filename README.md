@@ -1,36 +1,54 @@
-# Cripto+ — hub de passatempos (front-end)
+# Cripto+ — hub de passatempos
 
-Projeto independente (não depende do site da ZD Sistemas). React 19 + TypeScript + Vite, CSS próprio com tokens e tipografia fluida (`clamp()`, `min()`, container queries). Sem backend: tudo roda no navegador e o progresso fica no `localStorage`.
+Projeto independente. React 19 + TypeScript + Vite, CSS próprio com tokens e tipografia fluida. Publicado no GitHub Pages: https://gustavobenis.github.io/cripto-plus/
 
 ## Executar
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173
-npm test           # motor de grades, validador, criptograma
-npm run build      # typecheck + build em dist/
+npm run dev                # http://localhost:5173
+npm test                   # motores, validadores, conteúdo e pacotes diários
+npm run validate:content   # valida content/*.json
+npm run build              # typecheck + build em dist/
 ```
 
 ## O que existe
 
-- **Palavras cruzadas** jogáveis: toque, teclado físico e virtual, setas/Tab/Espaço, 5 níveis, 6 temas + "Variado", pausa, cronômetro opcional, salvamento e retomada automáticos, conferência (letras erradas marcadas com listras, não só cor).
-- **Caça-palavras** (8×8 a 16×16; diagonais e sentido inverso nos níveis altos; nos níveis 4–5 a lista mostra pistas, não as palavras) e **Palavras embaralhadas** (anagramas em sequência, toque ou teclado).
-- **Criptogramas** com ditados populares: mesmo número = mesma letra, letras "de graça" conforme o nível.
-- **Ajuda progressiva** (dica contextual → uma letra → palavra → solução completa com confirmação). Letras reveladas ficam marcadas; as dicas são contadas.
-- **Desafio do dia** (semente + tema derivados da data local), progresso e histórico, tela de conclusão com resultado compartilhável sem spoilers.
-- Layout mobile-first sem overflow horizontal verificado de 320 px a 1920 px; largura de conteúdo limitada em telas ultrawide/4K; respeita `prefers-reduced-motion`.
+- **Palavras cruzadas**, **criptogramas** (ditados populares), **caça-palavras** e **palavras embaralhadas**, com 5 níveis, 7 temas, pausa, cronômetro opcional e salvamento automático.
+- **Ajuda progressiva** (dica contextual → uma letra → palavra → solução completa com confirmação); letras reveladas ficam marcadas e as dicas são contadas.
+- **Desafio do dia** (4 modalidades) e **arquivo** de dias anteriores; dificuldade sobe de segunda a sábado.
+- Progresso, histórico, **backup exportável/importável**, resultado compartilhável sem spoilers.
+- PWA instalável e com uso offline após a primeira visita.
+- Layout mobile-first sem overflow horizontal verificado de 320 px a 1920 px.
 
-## Arquitetura
+## Tudo dentro do GitHub
 
-- `src/lib/crossword.ts` — gerador determinístico (por semente) + **validador independente** (cruzamentos, palavras acidentais, conectividade, numeração). Nenhuma grade é aceita sem passar no validador.
-- `src/lib/builders.ts` — escolhe palavras por tema/nível e gera a grade; `buildCryptogram` para criptogramas.
-- `src/data/words.ts` — banco de palavras/pistas **originais** (~190 entradas em 7 temas). Respostas em A–Z sem acentos (política em `src/lib/normalize.ts`).
-- As grades são geradas no cliente a partir da semente, portanto **a solução está no JavaScript do navegador**. Ok para um MVP sem contas; um backend precisaria servir grades e validar respostas no servidor.
+Sem servidor próprio: o GitHub é repositório, CMS, banco de conteúdo, agendador e hospedagem.
 
-## Fora do escopo desta entrega
+| Peça | Como funciona |
+|---|---|
+| Hospedagem | GitHub Pages (`pages.yml`): cada push em `main` roda testes, build e deploy. |
+| Conteúdo | `content/words.json` e `content/phrases.json`, com `source` e `verifiedAt`. Editável por Pull Request. |
+| Validação editorial | `npm run validate:content` no CI: respostas únicas e A–Z, pista que não revela a resposta, fonte e data obrigatórias. |
+| Desafio diário | `daily.yml` roda todo dia (06:00 UTC), gera 14 dias à frente em `public/daily/AAAA-MM-DD.json`, valida, commita e republica. Dias já publicados **nunca** são sobrescritos. |
+| Arquivo | Página `#/arquivo` lê `public/daily/index.json`. |
+| Reportar erro / sugerir palavra | Issue Forms em `.github/ISSUE_TEMPLATE`; o botão "Reportar erro" do jogo abre a issue já preenchida. |
+| Offline / instalável | `manifest.webmanifest` + `sw.js` (daily: rede primeiro; resto: cache). |
+| Progresso | `localStorage` + backup em `#/progresso`. |
 
-Backend (NestJS/Postgres), painel editorial, pipeline de conteúdo com IA, contas/sincronização, PWA/service worker. O banco ainda é pequeno para uso diário prolongado: o vocabulário se repete entre grades até crescer.
+Fluxo editorial em [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Arquitetura do código
+
+- `src/lib/crossword.ts` — gerador determinístico + **validador independente**; nenhuma grade é aceita sem passar nele.
+- `src/lib/wordsearch.ts`, `anagram.ts`, `builders.ts` — demais modalidades; `daily.ts` monta e valida o pacote do dia.
+- `scripts/` — `publish-daily.ts`, `validate-content.ts`, `make-icons.ts`.
+- As soluções ficam no JavaScript/JSON público (sem servidor não há como escondê-las). Serve para passatempo; não para competição com ranking.
+
+## Fora do escopo (exigiria backend)
+
+Contas e sincronização automática entre aparelhos (o backup manual cobre o básico), ranking, pipeline de conteúdo com IA, painel editorial próprio, testes de acessibilidade com leitor de tela e e2e em navegadores reais.
 
 ## Marca
 
-"Cripto" é família de revistas da Coquetel. O nome "Cripto+" veio do design de referência; antes de publicar, vale confirmar disponibilidade de marca/domínio. Todo o conteúdo e o código aqui são originais.
+"Cripto" é família de revistas da Coquetel. O nome "Cripto+" veio do design de referência; antes de divulgar, vale confirmar disponibilidade de marca/domínio. Todo o conteúdo e o código aqui são originais.

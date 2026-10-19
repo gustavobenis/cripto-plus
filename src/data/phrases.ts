@@ -1,15 +1,11 @@
-// Ditados populares (domínio público). Sem acentos para o criptograma (A–Z).
-export const PHRASES: string[] = [
-  'A UNIAO FAZ A FORCA',
-  'TEMPO E DINHEIRO',
-  'O SABER NAO OCUPA LUGAR',
-  'QUEM TEM BOCA VAI A ROMA',
-  'QUEM NAO ARRISCA NAO PETISCA',
-  'A PRATICA LEVA A PERFEICAO',
-  'DEUS AJUDA QUEM CEDO MADRUGA',
-  'A PRESSA E INIMIGA DA PERFEICAO',
-  'QUEM SEMEIA VENTO COLHE TEMPESTADE',
-  'DE GRAO EM GRAO A GALINHA ENCHE O PAPO',
-  'MAIS VALE UM PASSARO NA MAO DO QUE DOIS VOANDO',
-  'AGUA MOLE EM PEDRA DURA TANTO BATE ATE QUE FURA',
-];
+import raw from '../../content/phrases.json';
+
+export interface PhraseRecord {
+  text: string;
+  source: string;
+  verifiedAt: string;
+}
+
+// Ditados populares (domínio público), sem acentos (A–Z). Editável em content/phrases.json.
+export const PHRASE_RECORDS: PhraseRecord[] = raw;
+export const PHRASES: string[] = PHRASE_RECORDS.map((p) => p.text);

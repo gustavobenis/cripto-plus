@@ -310,3 +310,10 @@ legend { font-weight: 700; margin-bottom: 0.6rem; }
 
 /* grades grandes em telas estreitas: células mínimas de 28px, rolagem só dentro do tabuleiro */
 .ws-board { overflow-x: auto; overscroll-behavior-x: contain; }
+
+.cap { text-transform: capitalize; }
+.archive li { align-items: center; }
+.archive-btns { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.archive-btns .btn { min-height: 44px; padding-inline: 0.7rem; font-size: 0.85rem; }
+.report { margin: 1rem 0 2rem; }
+.report a { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; color: var(--primary); font-weight: 600; }

@@ -1,0 +1,53 @@
+name: Sugerir palavra e pista
+description: Proponha uma palavra nova para o banco de conteúdo.
+title: "[Palavra] "
+labels: ["conteudo"]
+body:
+  - type: input
+    id: answer
+    attributes:
+      label: Resposta
+      description: Só letras A–Z maiúsculas, sem acentos, espaços ou hífen (2 a 15 letras).
+      placeholder: ELEFANTE
+    validations:
+      required: true
+  - type: dropdown
+    id: tema
+    attributes:
+      label: Tema
+      options: [historia, geografia, ciencias, natureza, tecnologia, esportes, cultura]
+    validations:
+      required: true
+  - type: input
+    id: clue
+    attributes:
+      label: Pista
+      description: Escreva com suas próprias palavras. Não copie pistas de revistas ou de outros sites.
+    validations:
+      required: true
+  - type: input
+    id: hint
+    attributes:
+      label: Dica contextual
+      description: Uma informação extra que ajuda sem entregar a resposta.
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Familiaridade
+      options: ["1 — comum", "2 — conhecida", "3 — exige repertório"]
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Fonte do fato (opcional)
+      description: Link ou obra usada para conferir a informação.
+  - type: checkboxes
+    id: direitos
+    attributes:
+      label: Direitos
+      options:
+        - label: A pista e a dica são de minha autoria, sem cópia de material protegido.
+          required: true

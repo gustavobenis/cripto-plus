@@ -14,6 +14,7 @@ interface Props {
   seed: number;
   onNew: () => void;
   onHome: () => void;
+  prebuilt?: Puzzle;
 }
 
 interface Saved {
@@ -31,11 +32,11 @@ export default function CrosswordGame(props: Props) {
   const [run, setRun] = useState(0);
   const puzzle = useMemo(() => {
     try {
-      return buildCrossword(props.tema, props.nivel, props.seed);
+      return props.prebuilt ?? buildCrossword(props.tema, props.nivel, props.seed);
     } catch {
       return null;
     }
-  }, [props.tema, props.nivel, props.seed]);
+  }, [props.tema, props.nivel, props.seed, props.prebuilt]);
 
   if (!puzzle)
     return (

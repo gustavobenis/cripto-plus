@@ -1,0 +1,36 @@
+name: Reportar erro em um jogo
+description: Resposta errada, pista confusa, grade impossível ou bug.
+title: "[Erro] "
+labels: ["erro-de-conteudo"]
+body:
+  - type: input
+    id: jogo
+    attributes:
+      label: Jogo (link)
+      description: Já vem preenchido quando você usa o botão "Reportar erro" dentro do jogo.
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo do problema
+      options:
+        - Resposta ou pista incorreta
+        - Pista ambígua (mais de uma resposta possível)
+        - Grade impossível de completar
+        - Bug de interface
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu?
+      description: Cite o número da pista ou a palavra, se for o caso.
+    validations:
+      required: true
+  - type: input
+    id: dispositivo
+    attributes:
+      label: Dispositivo e navegador
+      placeholder: "Ex.: iPhone 14, Safari"

@@ -13,6 +13,7 @@ interface Props {
   seed: number;
   onNew: () => void;
   onHome: () => void;
+  prebuilt?: ReturnType<typeof buildWordSearch>;
 }
 
 interface Saved {
@@ -31,11 +32,11 @@ export default function WordSearchGame(props: Props) {
   const [run, setRun] = useState(0);
   const ws = useMemo(() => {
     try {
-      return buildWordSearch(props.tema, props.nivel, props.seed);
+      return props.prebuilt ?? buildWordSearch(props.tema, props.nivel, props.seed);
     } catch {
       return null;
     }
-  }, [props.tema, props.nivel, props.seed]);
+  }, [props.tema, props.nivel, props.seed, props.prebuilt]);
   if (!ws)
     return (
       <div className="container notice">

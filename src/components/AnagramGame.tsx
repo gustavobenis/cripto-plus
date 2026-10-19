@@ -12,6 +12,7 @@ interface Props {
   seed: number;
   onNew: () => void;
   onHome: () => void;
+  prebuilt?: ReturnType<typeof buildAnagrams>;
 }
 
 interface Saved {
@@ -24,7 +25,7 @@ interface Saved {
 
 export default function AnagramGame(props: Props) {
   const [run, setRun] = useState(0);
-  const items = useMemo(() => buildAnagrams(props.tema, props.nivel, props.seed), [props.tema, props.nivel, props.seed]);
+  const items = useMemo(() => props.prebuilt ?? buildAnagrams(props.tema, props.nivel, props.seed), [props.tema, props.nivel, props.seed, props.prebuilt]);
   return <Board key={`${props.tema}-${props.nivel}-${props.seed}-${run}`} items={items} onReset={() => setRun((n) => n + 1)} {...props} />;
 }
 

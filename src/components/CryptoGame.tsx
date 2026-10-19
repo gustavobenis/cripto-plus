@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { buildCryptogram } from '../lib/builders';
+import { buildCryptogram, type Cryptogram } from '../lib/builders';
 import { addResult, getPrefs, load, remove, save, setPrefs } from '../lib/storage';
 import { levelName } from '../data/catalog';
 import Icon from './Icon';
@@ -12,6 +12,7 @@ interface Props {
   seed: number;
   onNew: () => void;
   onHome: () => void;
+  prebuilt?: Cryptogram;
 }
 
 interface Saved {
@@ -29,8 +30,8 @@ export default function CryptoGame(props: Props) {
   return <Board key={`${props.nivel}-${props.seed}-${run}`} {...props} onReset={() => setRun((n) => n + 1)} />;
 }
 
-function Board({ nivel, seed, onNew, onHome, onReset }: Props & { onReset: () => void }) {
-  const crypto = useMemo(() => buildCryptogram(nivel, seed), [nivel, seed]);
+function Board({ nivel, seed, onNew, onHome, onReset, prebuilt }: Props & { onReset: () => void }) {
+  const crypto = useMemo(() => prebuilt ?? buildCryptogram(nivel, seed), [nivel, seed, prebuilt]);
   const gameId = `${nivel}:${seed}`;
   const storeKey = `cripto:cr:${gameId}`;
   const saved = useMemo(() => load<Saved>(storeKey), [storeKey]);

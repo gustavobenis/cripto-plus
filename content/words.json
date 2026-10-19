@@ -1,0 +1,1504 @@
+{
+  "historia": [
+    {
+      "answer": "PIRAMIDE",
+      "clue": "Monumento egípcio de faces triangulares",
+      "hint": "Os faraós eram sepultados em uma delas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FARAO",
+      "clue": "Soberano do Antigo Egito",
+      "hint": "Tutancâmon foi um deles",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CABRAL",
+      "clue": "Navegador que chegou ao Brasil em 1500",
+      "hint": "Comandava a frota portuguesa",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "REPUBLICA",
+      "clue": "Regime proclamado no Brasil em 1889",
+      "hint": "Substituiu o Império",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "IMPERIO",
+      "clue": "Governo chefiado por um imperador",
+      "hint": "Roma teve um dos mais famosos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CASTELO",
+      "clue": "Fortaleza medieval de nobres",
+      "hint": "Costuma ter muralhas e torres",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GUTENBERG",
+      "clue": "Inventor da prensa de tipos móveis",
+      "hint": "Alemão do século XV",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FEUDALISMO",
+      "clue": "Sistema social da Idade Média",
+      "hint": "Baseava-se na relação entre senhores e vassalos",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ROMA",
+      "clue": "Capital do império que dominou o Mediterrâneo",
+      "hint": "Cidade das sete colinas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ESCRAVIDAO",
+      "clue": "Regime abolido no Brasil em 1888",
+      "hint": "Terminou com a Lei Áurea",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GLADIADOR",
+      "clue": "Lutador das arenas romanas",
+      "hint": "O Coliseu era seu palco",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MUMIA",
+      "clue": "Corpo preservado pelos antigos egípcios",
+      "hint": "Envolvida em faixas de linho",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "INCAS",
+      "clue": "Povo andino que construiu Machu Picchu",
+      "hint": "Império com capital em Cusco",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "RENASCENCA",
+      "clue": "Movimento cultural europeu dos séculos XIV a XVI",
+      "hint": "Leonardo da Vinci foi um de seus nomes",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TIRADENTES",
+      "clue": "Mártir da Inconfidência Mineira",
+      "hint": "Foi enforcado em 1792",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "INDEPENDENCIA",
+      "clue": "Libertação política de um país",
+      "hint": "O Brasil comemora a sua em 7 de setembro",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "COLONIA",
+      "clue": "Território dominado por uma metrópole",
+      "hint": "O Brasil foi uma de Portugal",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ARQUEOLOGIA",
+      "clue": "Ciência que estuda vestígios de povos antigos",
+      "hint": "Usa escavações e artefatos",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "DINASTIA",
+      "clue": "Sucessão de governantes da mesma família",
+      "hint": "A Ming e a Tang governaram a China",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PERGAMINHO",
+      "clue": "Pele preparada usada para escrever na Antiguidade",
+      "hint": "Antecessor do papel na Europa",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "VIKING",
+      "clue": "Navegador guerreiro da Escandinávia",
+      "hint": "Seus barcos tinham proa esculpida",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MURALHA",
+      "clue": "Parede defensiva em torno de uma cidade",
+      "hint": "A da China é a mais conhecida",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ATENAS",
+      "clue": "Cidade grega berço da democracia",
+      "hint": "Seu símbolo é a Acrópole",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ESPARTA",
+      "clue": "Cidade grega famosa por seus guerreiros",
+      "hint": "Foi rival de Atenas",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "NAPOLEAO",
+      "clue": "Imperador francês derrotado em Waterloo",
+      "hint": "Nasceu na ilha da Córsega",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CARAVELA",
+      "clue": "Embarcação das grandes navegações portuguesas",
+      "hint": "Cabral chegou ao Brasil em algumas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BANDEIRANTE",
+      "clue": "Explorador paulista que avançou pelo interior do Brasil",
+      "hint": "Buscava ouro e pedras preciosas",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "REVOLUCAO",
+      "clue": "Mudança brusca da ordem política ou social",
+      "hint": "A Francesa foi em 1789",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    }
+  ],
+  "geografia": [
+    {
+      "answer": "AMAZONAS",
+      "clue": "Estado brasileiro de maior área",
+      "hint": "Sua capital é Manaus",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BRASILIA",
+      "clue": "Capital federal do Brasil",
+      "hint": "Inaugurada em 1960",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "EQUADOR",
+      "clue": "Linha imaginária que divide a Terra em hemisférios",
+      "hint": "Tem latitude zero",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PANTANAL",
+      "clue": "Maior planície alagável do planeta",
+      "hint": "Bioma de Mato Grosso e Mato Grosso do Sul",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ISLANDIA",
+      "clue": "País insular do Atlântico Norte, terra de gelo e vulcões",
+      "hint": "Sua capital é Reykjavik",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "DESERTO",
+      "clue": "Região árida com pouca chuva",
+      "hint": "O Saara é o maior de todos os quentes",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CONTINENTE",
+      "clue": "Grande massa de terra cercada por oceanos",
+      "hint": "A Oceania é um deles",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "LISBOA",
+      "clue": "Capital de Portugal",
+      "hint": "Banhada pelo rio Tejo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "NILO",
+      "clue": "Rio que atravessa o Egito",
+      "hint": "Um dos mais extensos do mundo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ARGENTINA",
+      "clue": "País vizinho do Brasil cuja capital é Buenos Aires",
+      "hint": "Fala-se espanhol",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ARQUIPELAGO",
+      "clue": "Conjunto de ilhas",
+      "hint": "Fernando de Noronha é um",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MERIDIANO",
+      "clue": "Linha imaginária que liga os polos",
+      "hint": "O de Greenwich é referência para os fusos",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CATARATAS",
+      "clue": "Quedas-d’água do Iguaçu",
+      "hint": "Ficam na fronteira com a Argentina",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "JAPAO",
+      "clue": "País do Monte Fuji",
+      "hint": "Chamado de Terra do Sol Nascente",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SAARA",
+      "clue": "Maior deserto quente do mundo",
+      "hint": "Ocupa grande parte do norte da África",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ANDES",
+      "clue": "Cordilheira que acompanha a costa oeste da América do Sul",
+      "hint": "Tem picos acima de 6 mil metros",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "EUROPA",
+      "clue": "Continente de Portugal, Itália e Alemanha",
+      "hint": "Abriga a União Europeia",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ATLANTICO",
+      "clue": "Oceano que separa o Brasil da África",
+      "hint": "Banha o litoral brasileiro",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FRONTEIRA",
+      "clue": "Limite entre dois países",
+      "hint": "O Brasil tem muitas com vizinhos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PENINSULA",
+      "clue": "Porção de terra cercada de água por quase todos os lados",
+      "hint": "A Ibérica abriga Portugal e Espanha",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PLANICIE",
+      "clue": "Terreno plano e de baixa altitude",
+      "hint": "Oposto de montanha",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MONTANHA",
+      "clue": "Grande elevação natural do terreno",
+      "hint": "O Everest é a mais alta",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "LATITUDE",
+      "clue": "Distância angular em relação ao Equador",
+      "hint": "Medida em graus norte ou sul",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "HEMISFERIO",
+      "clue": "Metade da esfera terrestre",
+      "hint": "Pode ser norte ou sul",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BUSSOLA",
+      "clue": "Instrumento cuja agulha aponta o norte",
+      "hint": "Usada para se orientar",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CANADA",
+      "clue": "País da folha de bordo na bandeira",
+      "hint": "Sua capital é Ottawa",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "EGITO",
+      "clue": "País das pirâmides de Gizé",
+      "hint": "É atravessado pelo grande rio africano",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "AFRICA",
+      "clue": "Continente com 54 países reconhecidos",
+      "hint": "Berço da espécie humana",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    }
+  ],
+  "ciencias": [
+    {
+      "answer": "ATOMO",
+      "clue": "Unidade básica da matéria",
+      "hint": "Tem prótons, nêutrons e elétrons",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GRAVIDADE",
+      "clue": "Força que nos mantém presos ao chão",
+      "hint": "Newton a descreveu",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "OXIGENIO",
+      "clue": "Gás essencial à respiração",
+      "hint": "Tem símbolo O na tabela periódica",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PLANETA",
+      "clue": "Corpo celeste que orbita uma estrela",
+      "hint": "Marte é um deles",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ECLIPSE",
+      "clue": "Alinhamento entre Sol, Terra e Lua",
+      "hint": "Pode ser solar ou lunar",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CELULA",
+      "clue": "Menor unidade viva dos organismos",
+      "hint": "Possui membrana e núcleo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "VACINA",
+      "clue": "Preparado que estimula as defesas contra doenças",
+      "hint": "Edward Jenner foi um pioneiro",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CLOROFILA",
+      "clue": "Pigmento verde das plantas",
+      "hint": "Capta a luz solar",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GALAXIA",
+      "clue": "Imenso conjunto de estrelas, como a Via Láctea",
+      "hint": "Nossa casa cósmica",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MOLECULA",
+      "clue": "União de dois ou mais átomos",
+      "hint": "A água é H2O",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "VULCAO",
+      "clue": "Abertura da crosta que expele lava",
+      "hint": "O Vesúvio é um dos mais famosos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "NEURONIO",
+      "clue": "Célula do sistema nervoso",
+      "hint": "Transmite impulsos elétricos",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TELESCOPIO",
+      "clue": "Instrumento para observar astros distantes",
+      "hint": "Galileu o aperfeiçoou",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ENERGIA",
+      "clue": "Capacidade de realizar trabalho",
+      "hint": "Pode ser solar, eólica ou hidráulica",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BACTERIA",
+      "clue": "Micro-organismo unicelular sem núcleo",
+      "hint": "Algumas causam doenças, outras ajudam a digestão",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "VIRUS",
+      "clue": "Agente microscópico que só se reproduz dentro de células",
+      "hint": "Causa gripe e dengue",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FOSSIL",
+      "clue": "Resto ou marca de ser vivo preservado em rocha",
+      "hint": "Estudado pelos paleontólogos",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GENETICA",
+      "clue": "Ciência da hereditariedade",
+      "hint": "Mendel é considerado seu pai",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CORACAO",
+      "clue": "Órgão que bombeia o sangue",
+      "hint": "Bate cerca de cem mil vezes por dia",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PULMAO",
+      "clue": "Órgão da respiração",
+      "hint": "Temos dois",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ESQUELETO",
+      "clue": "Conjunto de ossos do corpo",
+      "hint": "Sustenta e protege os órgãos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "COMETA",
+      "clue": "Corpo gelado com cauda luminosa",
+      "hint": "O Halley é o mais famoso",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ORBITA",
+      "clue": "Trajetória de um astro ao redor de outro",
+      "hint": "A da Terra em torno do Sol dura um ano",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "LASER",
+      "clue": "Feixe de luz concentrado e intenso",
+      "hint": "Usado em cirurgias e leitores de código",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PRISMA",
+      "clue": "Objeto de vidro que decompõe a luz",
+      "hint": "Mostra as cores do arco-íris",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TERMOMETRO",
+      "clue": "Instrumento que mede temperatura",
+      "hint": "Usado para verificar a febre",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "EVOLUCAO",
+      "clue": "Teoria de Darwin sobre a transformação das espécies",
+      "hint": "Baseada na seleção natural",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ELETRICIDADE",
+      "clue": "Forma de energia que circula em fios",
+      "hint": "Acende lâmpadas e liga computadores",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    }
+  ],
+  "natureza": [
+    {
+      "answer": "ELEFANTE",
+      "clue": "Maior mamífero terrestre",
+      "hint": "Tem tromba e presas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BALEIA",
+      "clue": "Mamífero gigante dos oceanos",
+      "hint": "Canta em águas profundas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ONCA",
+      "clue": "Maior felino das Américas",
+      "hint": "A pintada vive no Pantanal",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ARARA",
+      "clue": "Ave colorida de bico forte",
+      "hint": "Pode ser azul ou vermelha",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BORBOLETA",
+      "clue": "Inseto de asas coloridas",
+      "hint": "Antes de voar, foi lagarta",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FLORESTA",
+      "clue": "Grande área coberta de árvores",
+      "hint": "A Amazônia é a maior tropical",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CORAL",
+      "clue": "Animal marinho que forma recifes",
+      "hint": "Há uma grande barreira dele na Austrália",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PINGUIM",
+      "clue": "Ave que não voa, mas nada muito bem",
+      "hint": "Vive no hemisfério sul",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CAMALEAO",
+      "clue": "Réptil que muda de cor",
+      "hint": "Tem língua longa e olhos giratórios",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TARTARUGA",
+      "clue": "Réptil de casco, conhecido pela longevidade",
+      "hint": "Anda devagar",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PREDADOR",
+      "clue": "Animal que caça outros para se alimentar",
+      "hint": "Oposto de presa",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "HERBIVORO",
+      "clue": "Animal que só come vegetais",
+      "hint": "A vaca é um deles",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MANGUEZAL",
+      "clue": "Ecossistema costeiro de raízes aéreas",
+      "hint": "Berçário da vida marinha",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "POLINIZACAO",
+      "clue": "Transporte do pólen entre flores",
+      "hint": "As abelhas são grandes agentes",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "LEAO",
+      "clue": "Felino de juba, o rei da selva segundo a tradição",
+      "hint": "Só o macho tem juba",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GIRAFA",
+      "clue": "Animal de pescoço mais longo",
+      "hint": "Alimenta-se de folhas de árvores altas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GOLFINHO",
+      "clue": "Mamífero marinho inteligente e brincalhão",
+      "hint": "Comunica-se por assobios",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TUCANO",
+      "clue": "Ave de grande bico alaranjado",
+      "hint": "Vive nas florestas tropicais americanas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "JACARE",
+      "clue": "Réptil de focinho largo que vive em rios",
+      "hint": "Parente do crocodilo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CAPIVARA",
+      "clue": "Maior roedor do mundo",
+      "hint": "Gosta de água e vive em grupos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ABELHA",
+      "clue": "Inseto que produz mel",
+      "hint": "Vive em colmeias",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FORMIGA",
+      "clue": "Inseto que vive em colônias e carrega folhas",
+      "hint": "Tem rainha, operárias e soldados",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CACTO",
+      "clue": "Planta espinhosa de regiões áridas",
+      "hint": "Armazena água no caule",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ORQUIDEA",
+      "clue": "Flor delicada e muito apreciada em vasos",
+      "hint": "Existem milhares de espécies",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SAVANA",
+      "clue": "Vegetação de capim e árvores esparsas",
+      "hint": "Elefantes e leões vivem na africana",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TUBARAO",
+      "clue": "Peixe predador de nadadeira dorsal triangular",
+      "hint": "Tem esqueleto de cartilagem",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MORCEGO",
+      "clue": "Único mamífero capaz de voar",
+      "hint": "Orienta-se por ecolocalização",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "POLVO",
+      "clue": "Molusco de oito braços",
+      "hint": "Pode mudar de cor e textura",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    }
+  ],
+  "tecnologia": [
+    {
+      "answer": "INTERNET",
+      "clue": "Rede mundial de computadores",
+      "hint": "Conecta bilhões de pessoas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ALGORITMO",
+      "clue": "Sequência de passos para resolver um problema",
+      "hint": "Base de todo programa",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SOFTWARE",
+      "clue": "Parte lógica do computador",
+      "hint": "Oposto de hardware",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "HARDWARE",
+      "clue": "Parte física do computador",
+      "hint": "Inclui placas e peças",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SENHA",
+      "clue": "Código secreto de acesso",
+      "hint": "Deve ser forte e única",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TECLADO",
+      "clue": "Periférico de entrada com teclas",
+      "hint": "Tem leiaute QWERTY",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ROBO",
+      "clue": "Máquina programável que executa tarefas",
+      "hint": "Pode ser industrial",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "NAVEGADOR",
+      "clue": "Programa usado para acessar sites",
+      "hint": "Chrome e Firefox são exemplos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PIXEL",
+      "clue": "Menor ponto de uma imagem digital",
+      "hint": "As telas têm milhões",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BATERIA",
+      "clue": "Fonte de energia do celular",
+      "hint": "Precisa ser recarregada",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CRIPTOGRAFIA",
+      "clue": "Técnica que embaralha mensagens para protegê-las",
+      "hint": "Usada em senhas e pagamentos",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SERVIDOR",
+      "clue": "Computador que fornece dados a outros",
+      "hint": "Hospeda sites",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "DRONE",
+      "clue": "Aeronave não tripulada",
+      "hint": "Muito usada em filmagens",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "NUVEM",
+      "clue": "Armazenamento de dados pela internet",
+      "hint": "Também é formada por vapor no céu",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "APLICATIVO",
+      "clue": "Programa feito para celular ou tablet",
+      "hint": "Baixado em lojas virtuais",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PROCESSADOR",
+      "clue": "Chip que executa as instruções do computador",
+      "hint": "É o cérebro da máquina",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MEMORIA",
+      "clue": "Componente que guarda dados temporariamente",
+      "hint": "A RAM é um tipo",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SATELITE",
+      "clue": "Equipamento que orbita a Terra e transmite sinais",
+      "hint": "A Lua é o natural",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "IMPRESSORA",
+      "clue": "Periférico que coloca texto no papel",
+      "hint": "Usa tinta ou toner",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MONITOR",
+      "clue": "Tela do computador",
+      "hint": "Exibe imagens",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ANTIVIRUS",
+      "clue": "Programa que protege contra softwares maliciosos",
+      "hint": "Faz varreduras no sistema",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BACKUP",
+      "clue": "Cópia de segurança de arquivos",
+      "hint": "Evita perder dados",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PROGRAMADOR",
+      "clue": "Profissional que escreve código",
+      "hint": "Cria sites e aplicativos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TABLET",
+      "clue": "Dispositivo de tela sensível ao toque maior que o celular",
+      "hint": "O iPad é um exemplo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CODIGO",
+      "clue": "Conjunto de instruções escritas por quem programa",
+      "hint": "Pode ser aberto ou fechado",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SENSOR",
+      "clue": "Dispositivo que detecta luz, calor ou movimento",
+      "hint": "Presente em portas automáticas",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "NOTEBOOK",
+      "clue": "Computador portátil",
+      "hint": "Cabe numa mochila",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ARQUIVO",
+      "clue": "Conjunto de dados guardado com um nome",
+      "hint": "Pode ser documento, foto ou vídeo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    }
+  ],
+  "esportes": [
+    {
+      "answer": "FUTEBOL",
+      "clue": "Esporte mais popular do Brasil",
+      "hint": "Onze jogadores por equipe",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BASQUETE",
+      "clue": "Esporte em que se arremessa a bola na cesta",
+      "hint": "Foi criado nos Estados Unidos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "NATACAO",
+      "clue": "Modalidade disputada na piscina",
+      "hint": "Tem nados crawl e borboleta",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MARATONA",
+      "clue": "Corrida de 42 quilômetros",
+      "hint": "O nome vem de uma cidade grega",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "OLIMPIADA",
+      "clue": "Maior competição esportiva do mundo",
+      "hint": "Acontece a cada quatro anos",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ARBITRO",
+      "clue": "Juiz da partida",
+      "hint": "Usa apito e cartões",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PODIO",
+      "clue": "Local onde sobem os medalhistas",
+      "hint": "Tem três degraus",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "VOLEI",
+      "clue": "Esporte com rede em que a bola não pode cair",
+      "hint": "Joga-se com seis em quadra",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "RAQUETE",
+      "clue": "Equipamento do tênis",
+      "hint": "Também é usada no badminton",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GOLEIRO",
+      "clue": "Jogador que defende o gol",
+      "hint": "Único que usa as mãos no futebol",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ESGRIMA",
+      "clue": "Esporte de combate com espadas",
+      "hint": "Usa máscara e traje branco",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "JUDO",
+      "clue": "Arte marcial japonesa de projeções",
+      "hint": "Praticada de kimono",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CICLISMO",
+      "clue": "Esporte disputado sobre bicicletas",
+      "hint": "O Tour de France é a maior prova",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TRIATLO",
+      "clue": "Prova que une natação, ciclismo e corrida",
+      "hint": "Exige muita resistência",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TENIS",
+      "clue": "Esporte de raquete jogado em quadra dividida por rede",
+      "hint": "Wimbledon é o torneio mais tradicional",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BOXE",
+      "clue": "Esporte de luta com luvas",
+      "hint": "Disputado em ringue",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SURFE",
+      "clue": "Esporte praticado sobre ondas",
+      "hint": "Usa prancha",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SKATE",
+      "clue": "Esporte de rodinhas e manobras",
+      "hint": "Praticado em pistas e ruas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ATLETISMO",
+      "clue": "Conjunto de corridas, saltos e arremessos",
+      "hint": "Esporte mais tradicional das Olimpíadas",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "GINASTICA",
+      "clue": "Esporte de acrobacias e equilíbrio",
+      "hint": "Tem trave, argolas e solo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "HANDEBOL",
+      "clue": "Esporte coletivo em que a bola é lançada com as mãos ao gol",
+      "hint": "Muito praticado em escolas",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PENALTI",
+      "clue": "Cobrança de falta máxima no futebol",
+      "hint": "Feita da marca a onze metros do gol",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ESCANTEIO",
+      "clue": "Cobrança feita do canto do campo",
+      "hint": "Ocorre quando a bola sai pela linha de fundo",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CRONOMETRO",
+      "clue": "Aparelho que mede o tempo de uma prova",
+      "hint": "Usado em corridas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MEDALHA",
+      "clue": "Prêmio de ouro, prata ou bronze",
+      "hint": "Entregue no pódio",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TORCEDOR",
+      "clue": "Quem apoia um time das arquibancadas",
+      "hint": "Veste a camisa",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TECNICO",
+      "clue": "Comandante de uma equipe",
+      "hint": "Define a escalação",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CAMPEONATO",
+      "clue": "Competição com vários jogos para decidir um campeão",
+      "hint": "O Brasileirão é um",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    }
+  ],
+  "cultura": [
+    {
+      "answer": "ROMANCE",
+      "clue": "Narrativa longa em prosa",
+      "hint": "Dom Casmurro é um",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "POEMA",
+      "clue": "Texto em versos",
+      "hint": "Costuma ter rimas",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PINTURA",
+      "clue": "Arte feita com tintas sobre tela",
+      "hint": "A Mona Lisa é a mais famosa",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ESCULTURA",
+      "clue": "Arte de modelar ou esculpir formas",
+      "hint": "Feita em pedra, madeira ou bronze",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CINEMA",
+      "clue": "Sétima arte",
+      "hint": "Exibe filmes em salas escuras",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ORQUESTRA",
+      "clue": "Grande conjunto de instrumentistas",
+      "hint": "É conduzida por um maestro",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MAESTRO",
+      "clue": "Regente de orquestra",
+      "hint": "Usa batuta",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "PIANO",
+      "clue": "Instrumento de teclas brancas e pretas",
+      "hint": "Chopin escreveu muito para ele",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "VIOLINO",
+      "clue": "Instrumento de cordas tocado com arco",
+      "hint": "Os Stradivarius ficaram célebres",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "SAMBA",
+      "clue": "Ritmo brasileiro típico do Carnaval",
+      "hint": "Nasceu no Rio de Janeiro",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "CARNAVAL",
+      "clue": "Maior festa popular do Brasil",
+      "hint": "Tem desfiles de escolas de samba",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "MUSEU",
+      "clue": "Lugar que guarda e expõe obras e objetos históricos",
+      "hint": "O Louvre é um dos mais visitados",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "TEATRO",
+      "clue": "Arte de representar em um palco",
+      "hint": "Tem atores, cenário e plateia",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "DANCA",
+      "clue": "Arte dos movimentos ritmados",
+      "hint": "Pode ser balé, valsa ou frevo",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "AUTOR",
+      "clue": "Quem escreve uma obra",
+      "hint": "Machado de Assis foi um",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "BIBLIOTECA",
+      "clue": "Lugar com muitos livros para consulta e empréstimo",
+      "hint": "Pede silêncio",
+      "tier": 1,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "FOLCLORE",
+      "clue": "Tradições, lendas e costumes populares",
+      "hint": "O Saci faz parte dele",
+      "tier": 2,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    },
+    {
+      "answer": "ARQUITETURA",
+      "clue": "Arte de projetar edifícios",
+      "hint": "Niemeyer foi um mestre",
+      "tier": 3,
+      "source": "original",
+      "verifiedAt": "2026-10-19"
+    }
+  ]
+}

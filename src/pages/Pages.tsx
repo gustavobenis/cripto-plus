@@ -4,21 +4,31 @@ import MiniGrid from '../components/MiniGrid';
 import { GAME_TYPES, LEVELS, THEMES, TIPO_NAME, levelName, themeName, type Tipo } from '../data/catalog';
 import { fmt } from '../components/shared';
 import { getPrefs, getResults, load, setPrefs } from '../lib/storage';
+import { dailyParams, localDate } from '../lib/daily';
 
 export const go = (to: string) => {
   window.location.hash = to;
 };
 export const newSeed = () => Math.floor(Math.random() * 1_000_000_000);
-export const gameUrl = (tipo: Tipo, tema: string, nivel: number, seed: number) =>
-  `/jogo/${tipo}?tema=${tema}&nivel=${nivel}&seed=${seed}`;
+export const gameUrl = (tipo: Tipo, tema: string, nivel: number, seed: number, daily?: string) =>
+  `/jogo/${tipo}?tema=${tema}&nivel=${nivel}&seed=${seed}${daily ? `&daily=${daily}` : ''}`;
 
-/** Desafio diário: a data local define sementes e tema; todos veem o mesmo jogo no dia. */
-export function dailyInfo(d = new Date()) {
-  const key = d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
-  const dayNumber = Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000);
-  const themes = THEMES.filter((t) => t.id !== 'variado');
-  return { key, tema: themes[dayNumber % themes.length], label: d.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' }) };
+/** Desafio do dia: tema e nível derivados da data (o mesmo jogo para todos, publicado em public/daily). */
+export function dailyInfo(date = localDate()) {
+  const p = dailyParams(date);
+  const [y, m, d] = date.split('-').map(Number);
+  return {
+    date,
+    ...p,
+    theme: THEMES.find((t) => t.id === p.tema)!,
+    label: new Date(y, m - 1, d).toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' }),
+  };
 }
+
+export const dailyUrl = (tipo: Tipo, date = localDate()) => {
+  const i = dailyInfo(date);
+  return gameUrl(tipo, tipo === 'cripto' ? 'ditados' : i.tema, i.nivel, i.seed, date);
+};
 
 export function Home() {
   const daily = dailyInfo();
@@ -87,14 +97,14 @@ export function Home() {
       <section className="container section split">
         <div className="daily-card">
           <p className="badge badge-accent">Desafio do dia</p>
-          <h2>{daily.tema.icon} {daily.tema.name}</h2>
+          <h2>{daily.theme.icon} {daily.theme.name}</h2>
           <p className="muted">{daily.label}</p>
           <div className="daily-actions">
-            <button className="btn btn-primary" onClick={() => go(gameUrl('cruzadas', daily.tema.id, 3, daily.key))}>
+            <button className="btn btn-primary" onClick={() => go(dailyUrl('cruzadas'))}>
               Palavras Cruzadas <Icon name="arrow" />
             </button>
-            <button className="btn btn-ghost" onClick={() => go(gameUrl('cripto', 'ditados', 3, daily.key))}>
-              Criptograma
+            <button className="btn btn-ghost" onClick={() => go('/diario')}>
+              Todos os desafios do dia
             </button>
           </div>
         </div>
@@ -201,7 +211,46 @@ export function Setup({ tipo }: { tipo: Tipo }) {
   );
 }
 
+const PREFIX = 'cripto:';
+
+function exportProgress() {
+  const data: Record<string, string> = {};
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (k?.startsWith(PREFIX)) data[k] = localStorage.getItem(k) ?? '';
+    }
+  } catch {
+    /* sem acesso ao armazenamento */
+  }
+  const blob = new Blob([JSON.stringify({ app: 'cripto-plus', version: 1, data })], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `cripto-plus-progresso-${localDate()}.json`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+async function importProgress(file: File): Promise<string> {
+  try {
+    if (file.size > 2_000_000) return 'Arquivo grande demais.';
+    const json = JSON.parse(await file.text());
+    if (json?.app !== 'cripto-plus' || typeof json.data !== 'object' || json.data === null) return 'Este arquivo não é um backup do Cripto+.';
+    let n = 0;
+    for (const [k, v] of Object.entries(json.data as Record<string, unknown>)) {
+      if (!k.startsWith(PREFIX) || typeof v !== 'string') continue;
+      JSON.parse(v); // só aceita valores JSON válidos
+      localStorage.setItem(k, v);
+      n++;
+    }
+    return `${n} item(ns) restaurado(s).`;
+  } catch {
+    return 'Não foi possível ler o arquivo.';
+  }
+}
+
 export function Progress() {
+  const [msg, setMsg] = useState('');
   const results = getResults();
   const total = results.length;
   const best = results.length ? Math.min(...results.map((r) => r.time)) : 0;
@@ -229,7 +278,26 @@ export function Progress() {
           ))}
         </ul>
       )}
-      <p className="muted small">Os dados ficam salvos apenas neste dispositivo.</p>
+      <p className="muted small">Os dados ficam salvos apenas neste dispositivo. Use o backup para levar seu progresso a outro aparelho.</p>
+      <div className="actions backup">
+        <button type="button" className="btn btn-ghost" onClick={exportProgress}>
+          <Icon name="share" /> Exportar backup
+        </button>
+        <label className="btn btn-ghost">
+          Importar backup
+          <input
+            type="file"
+            accept="application/json"
+            hidden
+            onChange={async (e) => {
+              const f = e.target.files?.[0];
+              if (f) setMsg(await importProgress(f));
+              e.target.value = '';
+            }}
+          />
+        </label>
+      </div>
+      <p className="sr-status" role="status">{msg}</p>
     </section>
   );
 }
